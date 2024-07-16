@@ -1,0 +1,29 @@
+.custom_button{
+    appearance: none;
+    width: 75px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 10px;
+    position: relative;
+}
+
+.custom_button::before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    border-radius: 50%;
+    top: 5px;
+    left: 5px;
+    transition: 0.3s;
+}
+
+.custom_button:checked{
+    background-color: green;   
+}
+
+.custom_button:checked::before{
+    left: 60px;
+    background-color: white;
+}
