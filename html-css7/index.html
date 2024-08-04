@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark sticky-top bg-white">
+      <div class="container-fluid">
+        <div class="d-flex align-items-center">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <img
+              src="assets/logo.png"
+              class="img-fluid w-15"
+              alt=""
+              srcset=""
+            />
+            <span class="fw-bold ms-1 text-dark d-block" href="#"
+              >Nice Admin</span
+            >
+          </a>
+          <span
+            class="d-block fs-2 ms-5 cursor-pointer"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasScrolling"
+            aria-controls="offcanvasScrolling"
+            ><i class="ri-align-justify"></i
+          ></span>
+          <form class="d-flex d-none d-md-block" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+          </form>
+        </div>
+        <div class="d-flex gap-3 align-items-center">
+          <a
+            href="#"
+            class="d-block fs-4 text-dark text-decoration-none position-relative"
+          >
+            <i class="ri-notification-4-line"></i>
+            <span
+              class="position-absolute top-0 start-100 translate-middle badge rounded bg-success fw-light fs-6"
+              >3</span
+            >
+          </a>
+          <a
+            href="#"
+            class="d-block fs-4 text-dark text-decoration-none position-relative"
+            ><i class="ri-message-2-line"></i>
+            <span
+              class="position-absolute top-0 start-100 translate-middle badge rounded bg-success fw-light fs-6"
+              >3</span
+            >
+          </a>
+          <a href="#" class="d-flex align-items-center text-decoration-none">
+            <img
+              src="assets/profile-img.jpg"
+              alt=""
+              class="img-fluid w-15 rounded-circle"
+            />
+            <span class="ms-2 text-black"
+              >K. Anderson <i class="ri-arrow-down-s-line"></i
+            ></span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- Main Content-->
+
+    <section class="main">
+      <div class="container-fluid">
+        <div class="d-flex flex-column my-4">
+          <span class="fw-bold text-primary fs-3">Dashboard</span>
+          <span class="text-secondary"
+            >Home / <span class="">Dashboard</span></span
+          >
+        </div>
+        <div class="row mx-4">
+          <div class="col-9">
+            <div class="row">
+              <div class="col">
+                <span class="fw-bold text-primary"
+                  >Sales
+                  <span class="fw-light text-secondary">| Today </span></span
+                >
+                <div class="d-flex align-items-center gap-3 ms-3">
+                  <i class="ri-store-2-line fs-1 text-primary"></i>
+                  <div class="d-flex flex-column">
+                    <span class="fw-bold fs-3">145</span>
+                    <span class="text-primary"
+                      >12% <span class="text-secondary">increase</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <span class="fw-bold text-primary"
+                  >Sales
+                  <span class="fw-light text-secondary">| Today </span></span
+                >
+                <div class="d-flex align-items-center gap-3 ms-3">
+                  <i class="ri-money-dollar-circle-line fs-1 text-primary"></i>
+                  <div class="d-flex flex-column">
+                    <span class="fw-bold fs-3">145</span>
+                    <span class="text-primary"
+                      >12% <span class="text-secondary">increase</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <span class="fw-bold text-primary"
+                  >Sales
+                  <span class="fw-light text-secondary">| Today </span></span
+                >
+                <div class="d-flex align-items-center gap-3 ms-3">
+                  <i class="ri-customer-service-line fs-1 text-primary"></i>
+                  <div class="d-flex flex-column">
+                    <span class="fw-bold fs-3">145</span>
+                    <span class="text-primary"
+                      >12% <span class="text-secondary">increase</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="chart my-5 h-350px">
+              <span class="fw-bold text-primary"
+                >Reports
+                <span class="fw-light text-secondary">/ Today </span></span
+              >
+              <canvas id="chart1"></canvas>
+            </div>
+            <div class="recent-sales my-5">
+              <span class="fw-bold text-primary"
+                >Recent Sales
+                <span class="fw-light text-secondary">| Today </span></span
+              >
+              <div
+                class="heading my-4 d-flex justify-content-between align-items-center"
+              >
+                <div class="paginaiton">
+                  <select name="" id="" class="fs-5 p-1">
+                    <option value="">All</option>
+                    <option value="">10</option>
+                    <option value="">5</option>
+                  </select>
+                  <span>entries per page</span>
+                </div>
+                <input type="text" class="p-2 w-15" placeholder="search..." />
+              </div>
+              <table class="table">
+                <thead class="table-borderless">
+                  <tr class="">
+                    <th scope="col" class="fw-normal">#</th>
+                    <th scope="col" class="fw-normal">Customer</th>
+                    <th scope="col" class="fw-normal">Product</th>
+                    <th scope="col" class="fw-normal">Price</th>
+                    <th scope="col" class="fw-normal">Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="fw-light">
+                    <th scope="row">
+                      <a class="text-decoration-none" href="#">#2427</a>
+                    </th>
+                    <td>Brandon Jacob</td>
+                    <td><a href="">At prasesmentium minu</a></td>
+                    <td>$64</td>
+                    <td>
+                      <span class="rounded-3 text-bg-primary p-1">
+                        Approve</span
+                      >
+                    </td>
+                  </tr>
+                  <tr class="fw-light">
+                    <th scope="row">
+                      <a class="text-decoration-none" href="#">#2427</a>
+                    </th>
+                    <td>Brandon Jacob</td>
+                    <td><a href="">At prasesmentium minu</a></td>
+                    <td>$64</td>
+                    <td>
+                      <span class="rounded-3 text-bg-danger p-1">
+                        Rejected</span
+                      >
+                    </td>
+                  </tr>
+                  <tr class="fw-light">
+                    <th scope="row">
+                      <a class="text-decoration-none" href="#">#2427</a>
+                    </th>
+                    <td>Brandon Jacob</td>
+                    <td><a href="">At prasesmentium minu</a></td>
+                    <td>$64</td>
+                    <td>
+                      <span class="rounded-3 text-bg-primary p-1">
+                        Approve</span
+                      >
+                    </td>
+                  </tr>
+                  <tr class="fw-light">
+                    <th scope="row">
+                      <a class="text-decoration-none" href="#">#2427</a>
+                    </th>
+                    <td>Brandon Jacob</td>
+                    <td><a href="">At prasesmentium minu</a></td>
+                    <td>$64</td>
+                    <td>
+                      <span class="rounded-3 text-bg-warning p-1">
+                        Pending</span
+                      >
+                    </td>
+                  </tr>
+                  <tr class="fw-light">
+                    <th scope="row">
+                      <a class="text-decoration-none" href="#">#2427</a>
+                    </th>
+                    <td>Brandon Jacob</td>
+                    <td><a href="">At prasesmentium minu</a></td>
+                    <td>$64</td>
+                    <td>
+                      <span class="rounded-3 text-bg-primary p-1">
+                        Approve</span
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <hr />
+              <span>Showing 1 to 5 of 5 entries</span>
+            </div>
+
+            <div class="top-sellnig my-5">
+              <span class="fw-bold text-primary my-3 d-block"
+                >Top Selling
+                <span class="fw-light text-secondary">| Today </span></span
+              >
+              <table class="table" style="vertical-align: middle">
+                <thead class="table-borderless">
+                  <tr class="">
+                    <th scope="col">Preview</th>
+                    <th scope="col">Product</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Sold</th>
+                    <th scope="col">Revenu</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="fw-light">
+                    <th scope="row">
+                      <a href="#" class="img-fluid"
+                        ><img
+                          class="w-10 text-center"
+                          src="assets/product-1.jpg"
+                          alt=""
+                          srcset=""
+                      /></a>
+                    </th>
+                    <td><a href="">At prasesmentium minu</a></td>
+                    <td>$64</td>
+                    <td class="fw-bold">124</td>
+                    <td>$5.828</td>
+                  </tr>
+                  <tr class="fw-light">
+                    <th scope="row">
+                      <a href="#" class="img-fluid"
+                        ><img
+                          class="w-10"
+                          src="assets/product-2.jpg"
+                          alt=""
+                          srcset=""
+                      /></a>
+                    </th>
+                    <td><a href="">At prasesmentium minu</a></td>
+                    <td>$64</td>
+                    <td class="fw-bold">124</td>
+                    <td>$5.828</td>
+                  </tr>
+                  <tr class="fw-light">
+                    <th scope="row">
+                      <a href="#" class="img-fluid"
+                        ><img
+                          class="w-10"
+                          src="assets/product-3.jpg"
+                          alt=""
+                          srcset=""
+                      /></a>
+                    </th>
+                    <td><a href="">At prasesmentium minu</a></td>
+                    <td>$64</td>
+                    <td class="fw-bold">124</td>
+                    <td>$5.828</td>
+                  </tr>
+                  <tr class="fw-light">
+                    <th scope="row">
+                      <a href="#" class="img-fluid"
+                        ><img
+                          class="w-10"
+                          src="assets/product-4.jpg"
+                          alt=""
+                          srcset=""
+                      /></a>
+                    </th>
+                    <td><a href="">At prasesmentium minu</a></td>
+                    <td>$64</td>
+                    <td class="fw-bold">124</td>
+                    <td>$5.828</td>
+                  </tr>
+                  <tr class="fw-light">
+                    <th scope="row">
+                      <a href="#" class="img-fluid"
+                        ><img
+                          class="w-10"
+                          src="assets/product-5.jpg"
+                          alt=""
+                          srcset=""
+                      /></a>
+                    </th>
+                    <td><a href="">At prasesmentium minu</a></td>
+                    <td>$64</td>
+                    <td class="fw-bold">124</td>
+                    <td>$5.828</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="col-3"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- offCanvas -->
+    <div
+      class="offcanvas offcanvas-start"
+      data-bs-scroll="true"
+      data-bs-backdrop="false"
+      tabindex="-1"
+      id="offcanvasScrolling"
+      aria-labelledby="offcanvasScrollingLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
+          
+        </h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="accordion" id="accordionExample">
+          <span class="mx-3">
+            <i class="ri-dashboard-line"></i> Dashboard
+          </span>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <span class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <i class="ri-dashboard-line mx-1"></i>Components
+              </span>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <ul class="list-circle">
+                  <li><a href="" class="text-decoration-none text-primary my-1 d-block">Accordian</a></li>
+                  <li><a href="" class="text-decoration-none text-primary my-1 d-block">Accordian</a></li>
+                  <li><a href="" class="text-decoration-none text-primary my-1 d-block">Accordian</a></li>
+                  <li><a href="" class="text-decoration-none text-primary my-1 d-block">Accordian</a></li>
+                  <li><a href="" class="text-decoration-none text-primary my-1 d-block">Accordian</a></li>
+                  <li><a href="" class="text-decoration-none text-primary my-1 d-block">Accordian</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <span class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                <i class="ri-dashboard-line mx-1"></i>Components
+              </span>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <ul class="list-circle">
+                  <li><a href="" class="text-decoration-none text-primary my-1 d-block">Accordian</a></li>
+                  <li><a href="" class="text-decoration-none text-primary my-1 d-block">Accordian</a></li>
+                  <li><a href="" class="text-decoration-none text-primary my-1 d-block">Accordian</a></li>
+                  <li><a href="" class="text-decoration-none text-primary my-1 d-block">Accordian</a></li>
+                  <li><a href="" class="text-decoration-none text-primary my-1 d-block">Accordian</a></li>
+                  <li><a href="" class="text-decoration-none text-primary my-1 d-block">Accordian</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <span class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                <i class="ri-dashboard-line mx-1"></i>Components
+              </span>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <ul class="list-circle">
+                  <li><a href="" class="text-decoration-none text-primary my-1 d-block">Accordian</a></li>
+                  <li><a href="" class="text-decoration-none text-primary my-1 d-block">Accordian</a></li>
+                  <li><a href="" class="text-decoration-none text-primary my-1 d-block">Accordian</a></li>
+                  <li><a href="" class="text-decoration-none text-primary my-1 d-block">Accordian</a></li>
+                  <li><a href="" class="text-decoration-none text-primary my-1 d-block">Accordian</a></li>
+                  <li><a href="" class="text-decoration-none text-primary my-1 d-block">Accordian</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <span class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                <i class="ri-dashboard-line mx-1"></i>Components
+              </span>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <ul class="list-circle">
+                  <li><a href="" class="text-decoration-none text-primary my-1 d-block">Accordian</a></li>
+                  <li><a href="" class="text-decoration-none text-primary my-1 d-block">Accordian</a></li>
+                  <li><a href="" class="text-decoration-none text-primary my-1 d-block">Accordian</a></li>
+                  <li><a href="" class="text-decoration-none text-primary my-1 d-block">Accordian</a></li>
+                  <li><a href="" class="text-decoration-none text-primary my-1 d-block">Accordian</a></li>
+                  <li><a href="" class="text-decoration-none text-primary my-1 d-block">Accordian</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

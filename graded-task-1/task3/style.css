@@ -1,0 +1,49 @@
+
+.chili-color{
+    color: #e14f4f;
+}
+.bg-chili{
+    background-color: #e14f4f;
+}
+.gray-color{
+    color: #28282a;
+}
+
+.bg-gray-color{
+    background-color: #28282a;
+    border-top: 5px solid #e14f4f;
+}
+.w-85{
+    width: 85%;
+}
+
+.min-width-750px{
+    min-width: 750px;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+
+#exampleMessage{
+    height: 180px;
+}
+
+.btn-sub{
+    width: 25%;
+    margin: 0px auto;
+    border-radius: 26px;
+    background-color: #e14f4f;
+    color: white;
+    border: none;
+    width: 150px;
+    height: 39px;
+}
+
+.hidd{
+    display: none;
+}
+
+.the-form{
+    position: relative;
+    top: -70px;
+}

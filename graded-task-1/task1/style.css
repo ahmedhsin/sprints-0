@@ -1,0 +1,26 @@
+.space-letter{
+    letter-spacing: 3px;
+}
+
+.chili-color{
+    color: #e14f4f;
+}
+
+.gray-color{
+    color: #414143;
+}
+.w-85{
+    width: 85%;
+}
+
+.min-width-750px{
+    min-width: 750px;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+
+#closeModal{
+    pointer-events: none;
+    cursor: pointer;
+}

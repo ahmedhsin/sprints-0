@@ -1,0 +1,32 @@
+
+body{
+    height: 200vh;
+}
+.w-15{
+    width: 15%;
+}
+.w-10{
+    width: 10%;
+}
+.fs-11px{
+    font-size: 11px;
+}
+
+.h-350px {
+    height: 350px;
+}
+
+.vertical-align-middle{
+    vertical-align: middle;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+.width-16px{
+    width: 16px;
+}
+
+.list-circle{
+    list-style-type:circle;
+}
