@@ -1,0 +1,88 @@
+body{
+    background: #1a1925;
+    
+}
+
+/*global*/
+a {
+    text-decoration: none;
+}
+.fs-15px{
+    font-size: 15px !important;
+}
+
+.color-heading{
+    color:#4154f1;
+}
+
+.color-accent{
+    color:#012970;
+}
+
+.color-gray{
+    color: color-mix(in srgb, #ffff, transparent 30%)
+}
+
+.color-bg-heading{
+    background-color:#4154f1;
+}
+
+.color-bg-accent{
+    background-color:#012970;
+}
+
+.color-bg-accent-mix{
+    background-color: color-mix(in srgb, #4154f1, transparent 90%);
+}
+
+/**/
+
+/*nav*/
+.navbar-toggler-btn i{
+    color: #4154f1 !important;
+}
+.collapsed-navbar-custom a{
+    color: #fff;
+}
+.collapsed-navbar-custom a:hover{
+    color: #4154f1;
+}
+.colored-navbar{
+    background-color: #282828 !important;
+    transition: background-color 1s;
+}
+
+.links-container a:last-of-type{
+    color: #4154f1;
+}
+
+.links-container a:last-of-type:hover{
+    color: #fff;
+}
+/*end nav*/
+/*start hero */
+.hero{
+    background-image: url(../assets/hero-bg-dark.png);
+    
+}
+
+/*end hero*/
+
+/*values*/
+.our-values > div > div.row.gap-5.gap-lg-0.mb-5 > div > div{
+    background-color: #121212;
+    color: #fff;
+}
+
+.our-values div.container div:last-of-type div .custom-card {
+    background-color: #121212;
+}
+.our-values div.container div:last-of-type div .custom-card i {
+    color: #4154f1;
+}
+/*end values*/
+
+.service .container div.row div .card{
+    background-color: #121212;
+    color: #fff;
+}

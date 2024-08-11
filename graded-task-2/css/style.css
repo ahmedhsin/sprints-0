@@ -1,0 +1,477 @@
+body{
+    margin-bottom: 100px;
+}
+
+.top-btn{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.top-btn-display-none{
+    display: none;
+    transition: display 0.5s;
+}
+
+.top-btn:hover{
+    background-color:  color-mix(in srgb, #4154f1, transparent 20%);
+}
+
+.theme{
+    position: fixed;
+    top: 50%;
+    left: 10px;
+}
+.theme input{
+    appearance: none;
+    cursor: pointer;
+}
+
+.theme input::after{
+    content: "🌙";
+    display: block;
+    font-size: 20px;
+    background-color: gray;
+    padding: 3px;
+    height: 80px;
+    border-radius: 20px;
+    transition: 0.5s all ease;
+}
+.theme input:checked::after{
+    content: "☀️";
+    padding-top: 50px;
+    background-color: #f1c40f;
+    transition: 0.5s all ease;
+}
+
+
+/*global*/
+a {
+    text-decoration: none;
+}
+.fs-15px{
+    font-size: 15px !important;
+}
+
+.color-heading{
+    color:#012970;
+}
+
+.color-accent{
+    color:#4154f1;
+}
+
+.color-gray{
+    color: color-mix(in srgb, #444444, transparent 30%)
+}
+
+.color-bg-heading{
+    background-color:#012970;
+}
+
+.color-bg-accent{
+    background-color:#4154f1;
+}
+
+.color-bg-accent-mix{
+    background-color: color-mix(in srgb, #4154f1, transparent 90%);
+}
+
+/**/
+
+/*-----------------------start navbar-----------------------------*/
+.navbar-toggler-btn i{
+    color: #012970 !important;
+}
+nav.navbar{
+    position: fixed !important;
+    width: 100%;
+    z-index: 999;
+    /*background-color: transparent !important;*/
+}
+.navbar-toggler-btn{
+    border: none;
+    background: transparent;
+}
+
+.collapsed-navbar-custom{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(33, 37, 41, 0.8);
+    display: none;
+}
+.collapsed-navbar-custom a:hover{
+    color: #4154f1;
+}
+
+.navbar-nav-custom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
+.navbar-exit-custom{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.transparent-navbar{
+    background-color: transparent !important;
+    transition: background-color 1s;
+}
+
+.colored-navbar{
+    background-color: #ffffff !important;
+    transition: background-color 1s;
+}
+
+/********************end of navbar***********************/
+
+
+/*******************start of hero section*******************/
+.hero{
+    background-image: url(../assets/hero-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding-top: 10%;
+    
+}
+
+.links-container{
+
+}
+
+.links-container a{
+    padding: 14px 40px;
+    text-decoration: none;
+}
+
+.links-container a:last-of-type{
+    color: #444444;
+    font-weight: 500;
+}
+/*******************end of hero section*******************/
+
+/*******************start of about us*******************/
+.about-us{
+
+}
+
+.about-us div{
+
+
+}
+
+.about-us div .row div:first-of-type{
+    background-color: color-mix(in srgb, #4154f1, transparent 95%); ;
+}
+
+.about-us div .row div:last-of-type{
+    
+}
+
+.about-us div .row div:first-of-type a{
+    padding: 14px 40px;
+}
+/*******************end of about us*******************/
+
+/*******************start of our values*******************/
+
+.our-values div.container div:last-of-type div .custom-card i {
+    font-size: 45px;
+}
+
+.our-values div.container div:last-of-type div .custom-card div p:first-of-type{
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.our-values div.container div:last-of-type div .custom-card div p:last-of-type{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/*******************end of our values*******************/
+
+
+/*******************start of our features*******************/
+.features .custom-card:hover i{
+    background-color:#4154f1;
+    color: white;
+    transition: background-color  0.4s;
+    transition: color 0.4s;
+}
+/*******************end of our features*******************/
+
+/*******************start of service *******************/
+.happy-cards{
+    margin-top: 150px !important;
+}
+.service .container div.row div .card{
+
+}
+
+.service .container div.row div .card >  i{
+    padding: 20px 30px;
+}
+
+.service .container div.row div .card a{
+
+}
+
+.service .container div.row div:nth-of-type(1) .card:hover {
+    background-color: #0dcaf0;
+    color: white !important;
+    transition: background-color  0.4s;
+}
+
+.service .container div.row div:nth-of-type(1) .card:hover a {
+    color: white !important;
+}
+
+.service .container div.row div:nth-of-type(1) .card:hover > i {
+    background-color: white;
+    transition: background-color  0.4s;
+}
+
+
+.service .container div.row div:nth-of-type(1) .card > i{
+    color: #0dcaf0;
+    background: rgba(13, 202, 240, 0.1);
+}
+
+.service .container div.row div:nth-of-type(1) .card a {
+    color: #0dcaf0;
+}
+
+
+.service .container div.row div:nth-of-type(2) .card > i{
+    color: #fd7e14;
+    background: rgba(253, 126, 20, 0.1);
+}
+
+.service .container div.row div:nth-of-type(2) .card a {
+    color: #fd7e14;
+}
+
+.service .container div.row div:nth-of-type(2) .card:hover {
+    background-color: #fd7e14;
+    color: white !important;
+    transition: background-color  0.4s;
+}
+
+.service .container div.row div:nth-of-type(2) .card:hover a {
+    color: white !important;
+}
+
+.service .container div.row div:nth-of-type(2) .card:hover > i {
+    background-color: white;
+    transition: background-color  0.4s;
+}
+
+
+.service .container div.row div:nth-of-type(3) .card > i{
+    color: #20c997;
+    background: rgba(32, 201, 151, 0.1);
+}
+
+.service .container div.row div:nth-of-type(3) .card a {
+    color: #20c997;
+}
+
+.service .container div.row div:nth-of-type(3) .card:hover {
+    background-color: #20c997;
+    color: white !important;
+    transition: background-color  0.4s;
+}
+
+.service .container div.row div:nth-of-type(3) .card:hover a {
+    color: white !important;
+}
+
+.service .container div.row div:nth-of-type(3) .card:hover > i {
+    background-color: white;
+    transition: background-color  0.4s;
+}
+
+
+
+
+
+
+.service .container div.row div:nth-of-type(4) .card:hover {
+    background-color: #0dcaf0;
+    color: white !important;
+    transition: background-color  0.4s;
+}
+
+.service .container div.row div:nth-of-type(4) .card:hover a {
+    color: white !important;
+}
+
+.service .container div.row div:nth-of-type(4) .card:hover > i {
+    background-color: white;
+    transition: background-color  0.4s;
+}
+
+
+.service .container div.row div:nth-of-type(4) .card > i{
+    color: #0dcaf0;
+    background: rgba(13, 202, 240, 0.1);
+}
+
+.service .container div.row div:nth-of-type(4) .card a {
+    color: #0dcaf0;
+}
+
+
+.service .container div.row div:nth-of-type(5) .card > i{
+    color: #fd7e14;
+    background: rgba(253, 126, 20, 0.1);
+}
+
+.service .container div.row div:nth-of-type(5) .card a {
+    color: #fd7e14;
+}
+
+.service .container div.row div:nth-of-type(5) .card:hover {
+    background-color: #fd7e14;
+    color: white !important;
+    transition: background-color  0.4s;
+}
+
+.service .container div.row div:nth-of-type(5) .card:hover a {
+    color: white !important;
+}
+
+.service .container div.row div:nth-of-type(5) .card:hover > i {
+    background-color: white;
+    transition: background-color  0.4s;
+}
+
+
+.service .container div.row div:nth-of-type(6) .card > i{
+    color: #20c997;
+    background: rgba(32, 201, 151, 0.1);
+}
+
+.service .container div.row div:nth-of-type(6) .card a {
+    color: #20c997;
+}
+
+.service .container div.row div:nth-of-type(6) .card:hover {
+    background-color: #20c997;
+    color: white !important;
+    transition: background-color  0.4s;
+}
+
+.service .container div.row div:nth-of-type(6) .card:hover a {
+    color: white !important;
+}
+
+.service .container div.row div:nth-of-type(6) .card:hover > i {
+    background-color: white;
+    transition: background-color  0.4s;
+}
+
+
+/*******************end of service *******************/
+/*******************start of portfolio*******************/
+.portfolio-types button{
+    border: none;
+    background-color: unset;
+    color: #444444;
+    font-weight: 500;
+}
+.portfolio-types button:first-of-type {
+}
+
+.active{
+    color: #4154f1 !important;
+}
+
+.portfolio-imgs div{
+    padding: 0px 10px;
+    position: relative;
+}
+
+.portfolio-imgs div:hover .backdrop{
+    display: block;
+}
+
+.portfolio-imgs div .backdrop {
+    position: absolute;
+    top: calc(0px + 0.25rem);
+    left: calc(0px + 0.25rem);
+    width: calc(100% - 0.25rem);
+    height: calc(100% - 0.25rem);
+    background-color: rgba(33, 37, 41, 0.8);
+    display: none; 
+}
+
+.portfolio-imgs div .backdrop p:first-of-type {
+    color: white;
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    background: #4154f1;
+    padding: 4px 33px;
+    z-index: 1;
+}
+
+
+.portfolio-imgs div .backdrop .btns {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    font-size: 50px;
+    color: white;
+}
+
+
+.portfolio-imgs div .backdrop .btns i {
+    cursor: pointer;
+}
+
+
+.portfolio-imgs div .backdrop p:last-of-type {
+    position: absolute;
+    bottom: 5%;
+    color: white;
+}
+
+/*******************end of portfolio*******************/
+
+/*******************start of testimonial*******************/
+.testimonials .custom-card {
+    margin: 0 auto;
+}
+.testimonials .custom-card img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 80px;
+}
+
+.testimonials .custom-card p:first-of-type{
+    color: #444444;
+}
+
+.testimonials .custom-card .stars i {
+    color: #f1c40f;
+}
+/*******************end of testimonial*******************/
