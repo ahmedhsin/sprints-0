@@ -1,0 +1,105 @@
+body{
+    margin-bottom: 100px;
+}
+
+/*global*/
+a {
+    text-decoration: none;
+}
+.fs-15px{
+    font-size: 15px !important;
+}
+.color-bg-gray{
+    background-color: gray;
+}
+.color-bg-surface{
+    background-color:color-mix(in srgb, #444444, transparent 96%);
+}
+
+.color-surface{
+    color:color-mix(in srgb, #444444, transparent 90%);
+}
+
+.color-heading{
+    color:#5f687b;
+}
+
+.color-accent{
+    color:#10bc69;
+}
+
+.color-gray{
+    color: color-mix(in srgb, #444444, transparent 30%)
+}
+
+.color-bg-heading{
+    background-color:#5f687b;
+}
+
+.color-bg-accent{
+    background-color:#10bc69;
+}
+
+.color-bg-accent-mix{
+    background-color: color-mix(in srgb, #10bc69, transparent 90%);
+}
+
+/**/
+
+
+/*******************start of hero section*******************/
+.hero{
+    min-height: 100vh;
+    padding-top: 10%;
+    
+}
+
+.links-container{
+
+}
+
+.links-container a{
+    padding: 14px 40px;
+    text-decoration: none;
+    border-color: #10bc69;
+}
+
+.links-container a:last-of-type{
+    color: #444444;
+    font-weight: 500;
+}
+/*******************end of hero section*******************/
+
+/*******************start of service *******************/
+
+.service .container div.row div .card >  i{
+    padding: 20px 30px;
+}
+
+.service .container div.row div .card i{
+    color: #10bc69;
+}
+
+
+
+/*******************end of service *******************/
+
+/*******************start of about-us***********/
+.about-us .container .heading{
+    position: relative;
+}
+
+.about-us .container .heading h2 {
+    position: absolute;
+    /* text-align: center; */
+    left: 0px;
+    right: 0px;
+    top: 35%;
+}
+
+.about-us ul{
+    list-style: none;
+}
+.about-us ul li i {
+    color: #10bc69;
+}
