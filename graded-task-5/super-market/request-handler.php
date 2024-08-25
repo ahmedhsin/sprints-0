@@ -1,5 +1,5 @@
 <?php
-global $notify_handler, $guard_handler, $products, $orders;
+global $notify_handler, $guard_handler, $products, $orders, $users;
 include_once 'init.php';
 $title = 'add-product';
 //$guard_handler->validate('');
@@ -30,5 +30,27 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $notify_handler->set_msg('Order registered successfully', 'success');
         }
         header('Location: index.php');
+    }
+}else if($_SERVER['REQUEST_METHOD'] == 'GET'){
+    if ($_GET['model'] == 'users'){
+        if ($_GET['action'] == 'delete'){
+            $id = $_GET['id'];
+            $users->remove_by_id($id);
+            header('Location: dashboard.php?model=users');
+        }
+    }else if($_GET['model'] == 'products'){
+        if ($_GET['action'] == 'delete'){
+            $id = $_GET['id'];
+            $products->remove_by_id($id);
+            header('Location: dashboard.php?model=products');
+        }
+    }else if($_GET['model'] == 'orders'){
+        if ($_GET['action'] == 'delete'){
+            $id = $_GET['id'];
+            $orders->remove_by_id($id);
+            header('Location: dashboard.php?model=orders');
+        }
+    }else{
+        header('Location', 'index.php');
     }
 }

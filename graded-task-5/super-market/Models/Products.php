@@ -24,6 +24,12 @@ class Products
         return $query->fetch();
     }
 
+    public function remove_by_id($id)
+    {
+        $query = $this->conn->prepare('DELETE FROM products WHERE id = :id');
+        $query->bindParam(':id', $id);
+        return $query->execute();
+    }
     public function add_product($name, $count, $price, $image, $description, $admin_id)
     {
         $query = $this->conn->prepare('INSERT INTO products (name, count, price, image, description, admin_id) VALUES (:name, :count, :price, :image, :description, :admin_id)');

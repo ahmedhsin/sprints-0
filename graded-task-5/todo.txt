@@ -1,1 +1,1 @@
-// enable admin to update / delete
+// enable admin to update

@@ -30,6 +30,13 @@ class Users
         $query->execute();
         return $query->fetch();
     }
+    public function remove_by_id($id)
+    {
+        $query = $this->conn->prepare('DELETE FROM users WHERE id = :id');
+        $query->bindParam(':id', $id);
+        return $query->execute();
+
+    }
 
     public function login($email, $password)
     {
