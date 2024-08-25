@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
         header('Location: index.php');
     }
-}else if($_SERVER['REQUEST_METHOD'] == 'GET'){
+}else if($_SERVER['REQUEST_METHOD'] == 'GET' && $_SESSION['type'] == 'admin'){
     if ($_GET['model'] == 'users'){
         if ($_GET['action'] == 'delete'){
             $id = $_GET['id'];
