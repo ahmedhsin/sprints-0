@@ -1,0 +1,47 @@
+body{
+    margin-bottom: 100px;
+}
+
+.main .card a{
+    font-size: 14px;
+}
+
+.main .card img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.product-img{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+td[name='description'],td[name='name']{
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#card-desc{
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 15px;
+}
+
+.add-item{
+    position: fixed;
+    bottom: 18px;
+    right: 18px;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
