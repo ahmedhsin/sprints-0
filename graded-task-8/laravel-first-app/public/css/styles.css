@@ -1,0 +1,44 @@
+/*body{*/
+/*    background-color: aquamarine;*/
+/*}*/
+
+.contact_us{
+    max-width: 500px;
+    margin: auto;
+}
+table tr td img{
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+}
+
+.list-group{
+   background-color: #f7fafc;
+    padding: 10px;
+
+}
+.list-group > div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 10px;
+}
+.simulation{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    background-color: #f7fafc;
+    border-radius: 10px;
+    margin: 10px 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+a {
+    text-decoration: none;
+}
+
+.simulation .images img{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
